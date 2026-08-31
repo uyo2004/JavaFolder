@@ -11,9 +11,10 @@ public class IntegerDemoInteractiveWithName
         byte aByte ;
         short aShort ;
         long aLong;
+        String name;
         try (Scanner input = new Scanner(System.in)) {
             System.out.print("Enter your name >> ");
-            input.nextLine();
+            name = input.nextLine();
             System.out.print("Enter an integer >> ");
             anInt = input.nextInt();
             anotherInt = anInt * 10000000;
@@ -23,11 +24,13 @@ public class IntegerDemoInteractiveWithName
             aShort = input.nextShort();
             System.out.print("Enter a long >> ");
             aLong = input.nextLong();
+
+            System.out.println("Thank you, " + name);
+            System.out.println("The Integer is " + anInt);
+            System.out.println("The Integer is " + anotherInt);
+            System.out.println("The Byte is " + aByte);
+            System.out.println("The Short is " + aShort);
+            System.out.println("The Long is " + aLong);
         }
-        System.out.println("The Integer is " + anInt);
-        System.out.println("The Integer is " + anotherInt);
-        System.out.println("The Byte is " + aByte);
-        System.out.println("The Short is " + aShort);
-        System.out.println("The Long is " + aLong);
     }
 }
