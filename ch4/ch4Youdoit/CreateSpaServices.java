@@ -21,14 +21,15 @@ public class CreateSpaServices {
     public static SpaService getData(SpaService service) {
         String serviceName;
         double servicePrice;
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("Enter the name of the service: ");
-        serviceName = keyboard.nextLine();
-        System.out.print("Enter the price of the service: ");
-        servicePrice = keyboard.nextDouble();
-        service.setServiceName(serviceName);
-        service.setServicePrice(servicePrice);
-        keyboard.nextLine(); // consume the newline character
+        try (Scanner keyboard = new Scanner(System.in)) {
+            System.out.print("Enter the name of the service: ");
+            serviceName = keyboard.nextLine();
+            System.out.print("Enter the price of the service: ");
+            servicePrice = keyboard.nextDouble();
+            service.setServiceName(serviceName);
+            service.setServicePrice(servicePrice);
+            keyboard.nextLine(); // consume the newline character
+        }
         return service;
     }
 

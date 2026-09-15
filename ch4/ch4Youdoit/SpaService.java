@@ -1,13 +1,14 @@
 // Uyoojo Okene
-// p.133
+// p.138
 
 public class SpaService {
     private String serviceName;
     private double Price;
+
     public SpaService() {
-        serviceName = "XXX";
-        Price = 0;
+        this("XXX", 0.0);
     }
+
     public SpaService(String name, double pr) {
         serviceName = name;
         Price = pr;
