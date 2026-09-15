@@ -3,12 +3,12 @@
 public class DogTriathlonParticipant {
     private final int NUM_EVENTS;
     private static int totalcumulativeScore = 0;
-    private String name;
-    private int obedienceScore;
-    private int conformationScore;
-    private int agilityScore;
-    private int total;
-    private double average;
+    private final String name;
+    private final int obedienceScore;
+    private final int conformationScore;
+    private final int agilityScore;
+    private final int total;
+    private final double average;
     public DogTriathlonParticipant(String name, int numEvents, int score1, int score2, int score3) {
     
         this.name = name;
