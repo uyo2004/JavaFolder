@@ -10,7 +10,7 @@ public class DivideEvenly {
         for (var = 1; var <= limit; ++var) {
             if (limit % var == 0)
                 System.out.print(var + " ");
-            System.out.println();
-        }
+            }
+        System.out.println();
     }
 }
