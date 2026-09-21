@@ -29,6 +29,7 @@ public class CreateSpaServices {
             service.setServiceName(serviceName);
             service.setServicePrice(servicePrice);
             keyboard.nextLine(); // consume the newline character
+            
         }
         return service;
     }
