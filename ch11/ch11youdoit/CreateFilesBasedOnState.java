@@ -32,8 +32,8 @@ public class CreateFilesBasedOnState
 
             final int RECSIZE = s.length();
 
-            FileChannel fcIn = null;
-            FileChannel fcOut = null;
+            FileChannel fcIn;
+            FileChannel fcOut;
 
             String idString;
             int id;
